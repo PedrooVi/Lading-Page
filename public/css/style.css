@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Poppins:wght@400;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f5e1c8;
+    font-family: 'Lato', sans-serif;
+    color: #333;
+}
+
+
+.cabecalho {
+    background-color: #895737;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.3em;
+    font-family: 'Poppins', sans-serif;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+}
+
+.menu a:hover,
+.menu a.select {
+    background-color: #D4A017;
+    border-radius: 5px;
+}
+
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 40px;
+    gap: 20px;
+}
+
+.text {
+    flex: 1;
+    max-width: 50%;
+}
+
+.text h1 {
+    font-size: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    text-align: left;
+}
+
+.text p {
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.conteudo img {
+    max-width: 450px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #D4A017;
+    color: black;
+    font-weight: bold;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #B68A1C;
+}
+
+
+.unidades {
+    max-width: 1100px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.unidades h2 {
+    font-size: 32px;
+    font-family: 'Poppins', sans-serif;
+    color: #4d2c1d;
+    margin-bottom: 20px;
+}
+
+.unidades-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #8d5b38;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 280px;
+    width: 100%;
+}
+
+.card h3 {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    border: 3px solid transparent;
+    transition: border 0.3s ease-in-out;
+}
+
+
+.btn-card {
+    background-color: #D4A017;
+    color: black;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+
+.card .btn:hover {
+    background-color: #f0e1c3;
+}
