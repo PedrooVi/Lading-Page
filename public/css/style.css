@@ -33,6 +33,7 @@ body {
     font-family: 'Poppins', sans-serif;
     padding: 10px 15px;
     transition: background-color 0.3s;
+    font-weight: 600;
 }
 
 .menu a:hover,
@@ -42,7 +43,7 @@ body {
 }
 
 
-.container {
+.container, .sobre {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -52,19 +53,21 @@ body {
     gap: 20px;
 }
 
-.text {
+.text, .sobre-text {
     flex: 1;
     max-width: 50%;
 }
 
-.text h1 {
+.text h1,
+.sobre-text h2 {
     font-size: 50px;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     text-align: left;
 }
 
-.text p {
+.text p,
+.sobre-text p {
     font-size: 16px;
     line-height: 1.6;
     text-align: left;
@@ -154,4 +157,18 @@ body {
 
 .card .btn:hover {
     background-color: #f0e1c3;
+}
+
+.sobre h2{
+    font-size: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    text-align: left;
+}
+
+.sobre p{
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: left;
+    margin-top: 10px;
 }
