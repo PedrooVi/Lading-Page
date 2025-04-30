@@ -1,30 +1,3 @@
-function navegar(url, seletor){
-    
-    if(!url || !seletor) return
-
-    document.querySelectorAll('.section-principal').forEach(secao => {
-        secao.style.display = 'none'
-    })
-    
-
-    const elemento = document.querySelector(seletor)
-    fetch(url)
-    .then(resp  => resp.text())
-    .then(html =>{
-        elemento.innerHTML = html
-    })
-}
-
-document.querySelectorAll('[nav-link]').forEach(link =>{
-    const url = link.attributes['nav-link'].value
-    const seletorDestino = link.attributes['nav-destino'].value
-
-    link.onclick = e => {
-        e.preventDefault()
-        navegar(url, seletorDestino)
-    }
-})
-
 function navegacaoUnidades(id){
     const elemento = document.getElementById(id)
     if(elemento){
@@ -36,5 +9,22 @@ document.querySelectorAll('[nav-unidades]').forEach(link =>{
     link.addEventListener('click', function (e){
         e.preventDefault()
         navegacaoUnidades('unidades')
+    })
+})
+
+
+function verNoMapa(unidade){
+    const card = unidade.closest('.card')
+    const endereco = card.querySelector('h3').textContent
+
+    const url = `https://www.google.com/maps/search/?api=1&query=${endereco}`
+    window.open(url, '_blank')
+
+}
+
+document.querySelectorAll('.btn-card').forEach(botao =>{
+    botao.addEventListener('click', function(e){
+        e.preventDefault()
+        verNoMapa(botao)
     })
 })

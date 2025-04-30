@@ -172,3 +172,10 @@ body {
     text-align: left;
     margin-top: 10px;
 }
+
+.rodape{
+    height: 100%;
+    background-color:#895737;
+    font-weight: bold;
+    text-align: center;
+}
