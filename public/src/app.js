@@ -1,14 +1,15 @@
-function navegacaoUnidades(id){
+function navegacaoPagina(id){
     const elemento = document.getElementById(id)
     if(elemento){
         elemento.scrollIntoView({behavior: 'smooth'})
     }
 }
 
-document.querySelectorAll('[nav-unidades]').forEach(link =>{
+document.querySelectorAll('[navegacao]').forEach(link =>{
     link.addEventListener('click', function (e){
         e.preventDefault()
-        navegacaoUnidades('unidades')
+        const destino = link.getAttribute('navegacao')
+        navegacaoPagina(destino)
     })
 })
 

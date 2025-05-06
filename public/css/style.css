@@ -43,7 +43,7 @@ body {
 }
 
 
-.container, .sobre {
+.container, .sobre-text {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -53,7 +53,7 @@ body {
     gap: 20px;
 }
 
-.text, .sobre-text {
+.text{
     flex: 1;
     max-width: 50%;
 }
@@ -74,7 +74,8 @@ body {
     margin-top: 10px;
 }
 
-.conteudo img {
+.conteudo img,
+.imagem-sobre img {
     max-width: 450px;
     width: 100%;
     border-radius: 10px;
